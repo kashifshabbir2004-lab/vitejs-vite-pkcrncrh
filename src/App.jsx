@@ -13,7 +13,7 @@ function App() {
       <h2>Counter Val: {Counter}</h2>
       <User />
       <button onClick={() => setCounter(Counter + 1)}>
-        Increase Counter Value
+        Increase Counter Value f
       </button>
     </>
   );
