@@ -33,11 +33,11 @@ function ToDo(){
     //     alert("Button clicked!");
     // }
 
+    const [result, setResult] = useState("");
+
     const fruit=(name)=>{
         setResult(name); 
     }
-
-    const [result, setResult] = useState("");
 
     return(
         <>
@@ -50,7 +50,7 @@ function ToDo(){
             <button onClick={callFun}>Click Me</button>
             <button onClick={()=>fruit("Apple")}>Apple</button>
             <button onClick={()=>fruit("Banana")}>Banana</button>
-            <div id="result">{result}</div>
+            <div>{result}</div>
         </>
     )
 

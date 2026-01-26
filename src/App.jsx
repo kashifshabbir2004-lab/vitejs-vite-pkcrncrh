@@ -2,6 +2,7 @@ import Header from "./Header";
 import { Routes, Route, Link } from "react-router-dom";
 import Test from "./pages/Test";
 import ToDo from "./ToDo";
+import Counter from "./Counter";
 
 
 function Apple(){
@@ -14,6 +15,7 @@ function Apple(){
       <Fruit />
       <Jsx />
       <ToDo />
+      <Counter />
 
       <Routes>
         <Route path="/test" element={<Test />} />
