@@ -3,6 +3,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import Test from "./pages/Test";
 import ToDo from "./ToDo";
 import Counter from "./Counter";
+import Toggle from "./Toggle";
+import MultiCondition from "./MultiCondition";
 
 
 function Apple(){
@@ -16,6 +18,8 @@ function Apple(){
       <Jsx />
       <ToDo />
       <Counter />
+      <Toggle />
+      <MultiCondition />
 
       <Routes>
         <Route path="/test" element={<Test />} />
