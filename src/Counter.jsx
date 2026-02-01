@@ -6,6 +6,7 @@ const Counter=()=>{
     const addCount=(num)=>{
         setCount(num + 1);
     }
+    
     return(                
         <>
             <h1>Count : {count}</h1>

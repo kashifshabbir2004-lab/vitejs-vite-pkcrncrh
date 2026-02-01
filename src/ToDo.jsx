@@ -4,6 +4,7 @@ function callFun() {
     alert("Button clicked Outside!");
 }
 
+
 function ToDo(){
     const name="Kashif Ali";
     let x=10;
