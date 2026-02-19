@@ -5,9 +5,31 @@ import ToDo from "./ToDo";
 import Counter from "./Counter";
 import Toggle from "./Toggle";
 import MultiCondition from "./MultiCondition";
+import PropsTut from "./PropsTut";
+import UserColleges from "./UserColleges";
+import Student from "./Student";
+import { useState } from "react";
+import User from "./User";
+import Wrapper from "./Wrapper";
+import GetInputField from "./GetInputField";
 
 
 function Apple(){
+  let name="Kashif Ali SH";
+  let age=43;
+
+  let userObject={
+    name:"Kashif Ali",
+    age:43,
+  }
+
+  let userObject2={
+    name:"Uzair Kashif",
+    age:12,
+  }
+
+  let userColleges=['UMT','UCL'];
+  const [student,setStudent]=useState();
   return(
     <>
       <Header />
@@ -20,6 +42,25 @@ function Apple(){
       <Counter />
       <Toggle />
       <MultiCondition />
+      <PropsTut user={userObject} />
+      <PropsTut user={userObject2} />
+      <UserColleges names={userColleges} />
+      { student && <Student name={student} /> }
+      <button onClick={()=>setStudent("Uzair Kashif")}>Student Name</button>
+      <User name="Ali"/>
+      <User />
+      <Wrapper color="orange">
+        <h1>Hello Everyone</h1>
+      </Wrapper>
+      <Wrapper color="blue">
+        <h1>Hello Admin</h1>
+      </Wrapper>
+      <Wrapper>
+        <h1>Hello Kashif</h1>
+        <h2 style={{color:"red"}}>Please Login</h2>
+      </Wrapper>
+
+      <GetInputField />
 
       <Routes>
         <Route path="/test" element={<Test />} />

@@ -1,5 +1,9 @@
-function User() {
-  return <h1>User Component</h1>;
+function User({name="New User"}) {
+  return(
+    <>
+      <h1>Hi, {name}</h1>
+    </>
+  )
 }
 
 export default User;
